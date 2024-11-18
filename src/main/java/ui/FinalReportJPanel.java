@@ -13,7 +13,7 @@ import model.Supplier.Supplier;
 
 /**
  *
- * @author hp
+ * @author likhithng
  */
 public class FinalReportJPanel extends javax.swing.JPanel {
     private JPanel workArea;
@@ -28,24 +28,29 @@ public class FinalReportJPanel extends javax.swing.JPanel {
         populateTable();  // Add this method to populate your final report table
     }
     private void populateTable() {
-        DefaultTableModel model = (DefaultTableModel) tblReport.getModel();
-        model.setRowCount(0);
+         DefaultTableModel model = (DefaultTableModel) tblReport.getModel();
+    model.setRowCount(0);
 
-        if (supplier != null && supplier.getProductCatalog() != null) {
-            ArrayList<Product> products = supplier.getProductCatalog().getProducts();
-            for (Product p : products) {
-                Object[] row = {
-                    p.getName(),
-                    p.getTargetPrice(),
-                    p.getPreviousPrice(),
-                    p.getTargetPrice(),
-                    p.getSalesVolume(),
-                    p.getSalesRevenue()
-                    // Add other columns as needed
-                };
-                model.addRow(row);
-            }
+    if (supplier != null && supplier.getProductCatalog() != null) {
+        ArrayList<Product> products = supplier.getProductCatalog().getProducts();
+        for (Product p : products) {
+            // Calculate sales frequencies
+            int totalSales = p.getSalesVolume();
+            int salesBelowTarget = (int)(totalSales * 0.4); // 40% below target as sample
+            int salesAboveTarget = (int)(totalSales * 0.6); // 60% above target as sample
+
+            Object[] row = {
+                p.getName(),
+                p.getTargetPrice(),
+                p.getPreviousPrice(),  // Price before adjustment
+                p.getTargetPrice(),    // Price after adjustments
+                p.getSalesVolume(),    // Sales Volume
+                salesBelowTarget,      // Sales Frequency Below Target
+                salesAboveTarget       // Sales Frequency Above Target
+            };
+            model.addRow(row);
         }
+    }
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -100,28 +105,30 @@ public class FinalReportJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(btnBack)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
+                .addComponent(lblReport)
+                .addGap(431, 431, 431))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(btnBack)
-                        .addGap(274, 274, 274)
-                        .addComponent(lblReport))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 909, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addGap(17, 17, 17)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 831, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBack)
-                    .addComponent(lblReport))
-                .addGap(49, 49, 49)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(219, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(lblReport))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(btnBack)))
+                .addGap(40, 40, 40)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(154, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

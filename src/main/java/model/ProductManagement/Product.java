@@ -6,6 +6,7 @@
 package model.ProductManagement;
 
 import java.util.ArrayList;
+import model.CustomerManagement.CustomerProfile;
 
 import model.OrderManagement.OrderItem;
 
@@ -15,9 +16,12 @@ import model.OrderManagement.OrderItem;
  */
 public class Product {
     private String name;
+    private int targetPrice;
     private int floorPrice;
     private int ceilingPrice;
-    private int targetPrice;
+    private int salesVolume;
+    private double salesRevenue;
+    private int previousPrice;
     ArrayList<OrderItem> orderitems;
         public Product( int fp, int cp, int tp) {
 
@@ -26,12 +30,18 @@ public class Product {
         targetPrice = tp;
         orderitems = new ArrayList();
     }
-    public Product(String n, int fp, int cp, int tp) {
-        name = n;
-        floorPrice = fp;
-        ceilingPrice = cp;
-        targetPrice = tp;
-        orderitems = new ArrayList();
+        public Product(String name, int floor, int ceiling, int target) {
+       this.name = name;
+    this.floorPrice = floor;
+    this.ceilingPrice = ceiling;
+    this.targetPrice = target;
+    this.previousPrice = target; // Initialize previous price to the same value as target price
+    this.salesVolume = 100; // Default sample value
+    this.salesRevenue = targetPrice * salesVolume;
+        }
+
+    public ArrayList<OrderItem> getOrderitems() {
+        return orderitems;
     }
         public Product updateProduct(int fp, int cp, int tp) {
         floorPrice = fp;
@@ -79,14 +89,42 @@ public class Product {
         return sum;
     }
         public int getSalesVolume() {
-        int sum = 0;
-        for (OrderItem oi : orderitems) {
-            sum = sum + oi.getOrderItemTotal();     //positive and negative values       
-        }
-        return sum;
+        return salesVolume;
     }
+    public void setTargetPrice(int price) {
+        if (price >= floorPrice && price <= ceilingPrice) {
+            this.previousPrice = this.targetPrice; // Store old price before changing
+            this.targetPrice = price;
+            this.salesRevenue = this.targetPrice * this.salesVolume;
+        }
+    }
+    public void setFloorPrice(int floorPrice) {
+        this.floorPrice = floorPrice;
+        // Update revenue when price changes
+        this.salesRevenue = this.targetPrice * this.salesVolume;
+    }
+    public void setCeilingPrice(int ceilingPrice) {
+        this.ceilingPrice = ceilingPrice;
+    }
+    public void setSalesVolume(int salesVolume) {
+        this.salesVolume = salesVolume;
+        // Update revenue when volume changes
+        this.salesRevenue = this.targetPrice * this.salesVolume;
+    }
+    public void setSalesRevenue(double salesRevenue) {
+        this.salesRevenue = salesRevenue;
+    }
+    
+    public double getSalesRevenue() {
+        return salesRevenue;
+    }
+
+   
     public void setName(String n){
         name = n;
+    }
+    public String getName() {
+        return name;
     }
     @Override
     public String toString(){
@@ -97,6 +135,13 @@ public class Product {
     }
     public int getCeilingPrice(){
         return ceilingPrice;
+    }
+    public int getPreviousPrice() {
+        return previousPrice;
+    }
+
+    public void addOrder(CustomerProfile randomCustomer, int targetPrice) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }

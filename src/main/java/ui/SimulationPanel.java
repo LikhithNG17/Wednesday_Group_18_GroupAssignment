@@ -14,7 +14,7 @@ import model.Supplier.Supplier;
 
 /**
  *
- * @author hp
+ * @author likhithng
  */
 public class SimulationPanel extends javax.swing.JPanel {
        private JPanel workArea;
