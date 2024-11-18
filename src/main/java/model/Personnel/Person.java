@@ -13,7 +13,7 @@ public class Person {
 
     String id;
 
-    public Person(String id) {
+    public Person(String id, String par) {
 
         this.id = id;
     }

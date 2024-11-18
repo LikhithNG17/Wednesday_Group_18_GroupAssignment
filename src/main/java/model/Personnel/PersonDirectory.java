@@ -23,7 +23,7 @@ public class PersonDirectory {
 
     public Person newPerson(String id) {
 
-        Person p = new Person(id);
+        Person p = new Person(id, "Customer Name " );
         personlist.add(p);
         return p;
     }

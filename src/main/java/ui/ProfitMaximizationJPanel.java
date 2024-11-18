@@ -18,7 +18,7 @@ import model.Supplier.Supplier;
 
 /**
  *
- * @author gagan
+ * @author likhitng
  */
 public class ProfitMaximizationJPanel extends javax.swing.JPanel {
     JPanel workArea;
@@ -60,7 +60,7 @@ public class ProfitMaximizationJPanel extends javax.swing.JPanel {
     private double margins;
     private double profitability;
 
-    // 构造器
+    
     public ProfitMaximizationResult(String productName, double currentPrice, double sales, double margins, double profitability) {
         this.productName = productName;
         this.currentPrice = currentPrice;

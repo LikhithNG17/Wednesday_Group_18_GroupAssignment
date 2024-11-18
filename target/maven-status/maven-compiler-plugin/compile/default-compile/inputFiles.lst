@@ -1,37 +1,45 @@
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/MarketingManagement/MarketingPersonProfile.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/CustomerManagement/ChannelCatalog.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/SalesManagement/SalesPersonProfile.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/Personnel/Person.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/Business/ConfigureABusiness.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/Personnel/PersonDirectory.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/Personnel/Profile.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/OrderManagement/MasterOrderList.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/UserAccountManagement/UserAccount.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/ProductManagement/ProductSummary.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/CustomerManagement/CustomerSummary.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/CustomerManagement/MarketCatalog.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/Personnel/EmployeeProfile.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/CustomerManagement/CustomerDirectory.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/MarketModel/Market.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/UserAccountManagement/UserAccountDirectory.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/ProductManagement/ProductCatalog.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/OrderManagement/Order.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/Personnel/CustomerAccount.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/ProductManagement/SolutionOffer.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/OrderManagement/MasterOrderReport.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/ui/PricingModel.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/ProductManagement/SolutionOfferCatalog.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/Supplier/Supplier.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/ProductManagement/Product.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/Business/Business.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/MarketModel/MarketChannelAssignment.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/Personnel/EmployeeDirectory.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/Supplier/SupplierDirectory.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/MarketingManagement/MarketingPersonDirectory.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/ProductManagement/ProductsReport.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/SalesManagement/SalesPersonDirectory.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/MarketModel/Channel.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/CustomerManagement/CustomersReport.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/OrderManagement/OrderSummary.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/OrderManagement/OrderItem.java
-/Users/likhithng/Downloads/PricingModel/src/main/java/model/CustomerManagement/CustomerProfile.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/ui/FinalReportJPanel.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/MarketModel/Channel.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/SalesManagement/SalesPersonDirectory.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/UserAccountManagement/UserAccount.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/CustomerManagement/MarketCatalog.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/MarketingManagement/MarketingPersonProfile.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/Personnel/Profile.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/Business/ConfigureABusiness.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/CustomerManagement/CustomerSummary.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/SalesManagement/SalesPersonProfile.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/UserAccountManagement/UserAccountDirectory.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/ProductManagement/ProductSummary.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/ProductManagement/SolutionOffer.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/MarketModel/MarketChannelAssignment.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/Personnel/CustomerAccount.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/ui/SupplierWorkAreaJPanel.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/ui/SimulationPanel.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/Personnel/EmployeeProfile.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/ui/PricePerformanceJPanel.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/MarketModel/Market.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/OrderManagement/MasterOrderList.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/CustomerManagement/CustomerDirectory.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/DefaultPackage/PricingModel.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/ProductManagement/Product.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/Personnel/Person.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/Business/Business.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/Personnel/EmployeeDirectory.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/CustomerManagement/CustomersReport.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/ui/PriceAdjustmentJPanel.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/ProductManagement/ProductsReport.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/ProductManagement/ProductCatalog.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/Supplier/Supplier.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/OrderManagement/MasterOrderReport.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/OrderManagement/OrderItem.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/CustomerManagement/ChannelCatalog.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/ui/ProfitMaximizationJPanel.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/MarketingManagement/MarketingPersonDirectory.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/Personnel/PersonDirectory.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/OrderManagement/Order.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/DefaultPackage/LoginMainJFrame.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/ProductManagement/SolutionOfferCatalog.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/Supplier/SupplierDirectory.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/CustomerManagement/CustomerProfile.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/ui/PriceAdjustmentJPanel1.java
+/Users/lydia/Desktop/INFO 5100/-Li_Yue_002609988_assignments-/Assignment-5/src/main/java/model/OrderManagement/OrderSummary.java
